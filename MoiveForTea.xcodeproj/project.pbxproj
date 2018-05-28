@@ -8,20 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		B0EC54AF20B8FDEF0056504D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0EC54AE20B8FDEF0056504D /* AppDelegate.swift */; };
-		B0EC54B120B8FDEF0056504D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0EC54B020B8FDEF0056504D /* ViewController.swift */; };
 		B0EC54B420B8FDEF0056504D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0EC54B220B8FDEF0056504D /* Main.storyboard */; };
 		B0EC54B620B8FDF00056504D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B0EC54B520B8FDF00056504D /* Assets.xcassets */; };
 		B0EC54B920B8FDF00056504D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0EC54B720B8FDF00056504D /* LaunchScreen.storyboard */; };
+		B0EC54C120B90BFE0056504D /* MoiveListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0EC54C020B90BFE0056504D /* MoiveListViewController.swift */; };
+		B0EC54C320B90C310056504D /* MovieDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0EC54C220B90C310056504D /* MovieDetailTableViewCell.swift */; };
+		B0EC54C520B911D00056504D /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0EC54C420B911D00056504D /* Movie.swift */; };
+		B0EC54C720B911DF0056504D /* MovieController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0EC54C620B911DF0056504D /* MovieController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B0EC54AB20B8FDEF0056504D /* MoiveForTea.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoiveForTea.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0EC54AE20B8FDEF0056504D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B0EC54B020B8FDEF0056504D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B0EC54B320B8FDEF0056504D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B0EC54B520B8FDF00056504D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B0EC54B820B8FDF00056504D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B0EC54BA20B8FDF00056504D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B0EC54C020B90BFE0056504D /* MoiveListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoiveListViewController.swift; sourceTree = "<group>"; };
+		B0EC54C220B90C310056504D /* MovieDetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailTableViewCell.swift; sourceTree = "<group>"; };
+		B0EC54C420B911D00056504D /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		B0EC54C620B911DF0056504D /* MovieController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +60,57 @@
 		B0EC54AD20B8FDEF0056504D /* MoiveForTea */ = {
 			isa = PBXGroup;
 			children = (
-				B0EC54AE20B8FDEF0056504D /* AppDelegate.swift */,
-				B0EC54B020B8FDEF0056504D /* ViewController.swift */,
-				B0EC54B220B8FDEF0056504D /* Main.storyboard */,
-				B0EC54B520B8FDF00056504D /* Assets.xcassets */,
-				B0EC54B720B8FDF00056504D /* LaunchScreen.storyboard */,
-				B0EC54BA20B8FDF00056504D /* Info.plist */,
+				B0EC54C920B912A30056504D /* Model */,
+				B0EC54CA20B912AD0056504D /* Model Controller  */,
+				B0EC54C820B912990056504D /* UI */,
+				B0EC54CB20B912B80056504D /* View Controller */,
+				B0EC54CC20B912EC0056504D /* Resourses */,
 			);
 			path = MoiveForTea;
+			sourceTree = "<group>";
+		};
+		B0EC54C820B912990056504D /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				B0EC54B220B8FDEF0056504D /* Main.storyboard */,
+				B0EC54C220B90C310056504D /* MovieDetailTableViewCell.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		B0EC54C920B912A30056504D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B0EC54C420B911D00056504D /* Movie.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B0EC54CA20B912AD0056504D /* Model Controller  */ = {
+			isa = PBXGroup;
+			children = (
+				B0EC54C620B911DF0056504D /* MovieController.swift */,
+			);
+			path = "Model Controller ";
+			sourceTree = "<group>";
+		};
+		B0EC54CB20B912B80056504D /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B0EC54C020B90BFE0056504D /* MoiveListViewController.swift */,
+			);
+			path = "View Controller";
+			sourceTree = "<group>";
+		};
+		B0EC54CC20B912EC0056504D /* Resourses */ = {
+			isa = PBXGroup;
+			children = (
+				B0EC54BA20B8FDF00056504D /* Info.plist */,
+				B0EC54B720B8FDF00056504D /* LaunchScreen.storyboard */,
+				B0EC54B520B8FDF00056504D /* Assets.xcassets */,
+				B0EC54AE20B8FDEF0056504D /* AppDelegate.swift */,
+			);
+			path = Resourses;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,8 +184,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B0EC54B120B8FDEF0056504D /* ViewController.swift in Sources */,
+				B0EC54C320B90C310056504D /* MovieDetailTableViewCell.swift in Sources */,
+				B0EC54C720B911DF0056504D /* MovieController.swift in Sources */,
 				B0EC54AF20B8FDEF0056504D /* AppDelegate.swift in Sources */,
+				B0EC54C520B911D00056504D /* Movie.swift in Sources */,
+				B0EC54C120B90BFE0056504D /* MoiveListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,7 +334,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = S7CCUH8W47;
-				INFOPLIST_FILE = MoiveForTea/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/MoiveForTea/Resourses/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -300,7 +352,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = S7CCUH8W47;
-				INFOPLIST_FILE = MoiveForTea/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/MoiveForTea/Resourses/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
